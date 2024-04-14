@@ -5,15 +5,15 @@
  *      Author: nicoor
  */
 
-#include "bxcan_stmf4.hpp"
-
+#include "stm32f3xx_hal.h"
+#include "inverter.hpp"
 
 namespace inverter {
 
-Inverter::Inverter(CAN_HandleTypeDef CANArg, CAN_TxHeaderTypeDef TxArg){
-	CanHandle = CANArg;
-	TxHeader = TxHeader;
-}
+	Inverter::Inverter(CAN_HandleTypeDef CANArg, CAN_TxHeaderTypeDef TxArg){
+		CanHandle = CANArg;
+		TxHeader = TxHeader;
+	}
 
 
 }

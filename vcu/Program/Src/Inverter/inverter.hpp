@@ -14,16 +14,16 @@
  * until then, this is for testing
  */
 
-namespace Inverter
+namespace inverter
 {
 	class Inverter
 	{
 	public:
 		Inverter(CAN_HandleTypeDef CANArg, CAN_TxHeaderTypeDef TxArg);
 
-		uint_8* messageGen(float torque); //reimplementation of chad's python code
+		uint8_t* messageGen(float torque); //reimplementation of chad's python code
 
-		void updateBus(uint_8* message); //add message to bus
+		void updateBus(uint8_t* message); //add message to bus
 
 		void sendMessage(); //send message, will be called in main
 

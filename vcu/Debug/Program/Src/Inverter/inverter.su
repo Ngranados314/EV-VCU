@@ -1,0 +1,1 @@
+../Program/Src/Inverter/inverter.cpp:13:2:inverter::Inverter::Inverter(CAN_HandleTypeDef, CAN_TxHeaderTypeDef)	24	static
