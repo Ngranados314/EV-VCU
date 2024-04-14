@@ -21,19 +21,20 @@ namespace inverter
 	public:
 		Inverter(CAN_HandleTypeDef CANArg, CAN_TxHeaderTypeDef TxArg);
 
-		uint8_t* messageGen(float torque); //reimplementation of chad's python code
+		void messageGen(float torque); //reimplementation of chad's python code
 
 		void updateBus(uint8_t* message); //add message to bus
-
-		void sendMessage(); //send message, will be called in main
 
 		void CAN_Config();
 
 		void SystemClock_Config(); //this and CAN_config are one time configs
+								   //will be moved out of this class later
 
 	private:
+		uint8_t message[4];
+		uint32_t TxMailBox;
 
-		CAN_HandleTypeDef CanHandle;
+		CAN_HandleTypeDef hcan;
 		CAN_TxHeaderTypeDef TxHeader;
 
 	};

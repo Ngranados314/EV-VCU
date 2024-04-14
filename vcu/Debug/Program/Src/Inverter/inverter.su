@@ -1,1 +1,3 @@
 ../Program/Src/Inverter/inverter.cpp:13:2:inverter::Inverter::Inverter(CAN_HandleTypeDef, CAN_TxHeaderTypeDef)	24	static
+../Program/Src/Inverter/inverter.cpp:24:7:void inverter::Inverter::messageGen(float)	16	static
+../Program/Src/Inverter/inverter.cpp:28:7:void inverter::Inverter::updateBus(uint8_t*)	16	static
